@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/calc.png">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Calculate</title>
+</head>
+<body class="calcbody">
+    <header>
+        <h1><a href="calc.html">calculator</a></h1>
+        <h2>EasyCalc</h2>
+    </header>
+    <main>
+        <form class="calc">
+            <input type="number" name="number1" id="number1" placeholder="რიცხვი 1">
+            <input type="text" name="operator" id="operator" placeholder="მოქმედება">
+            <input type="number" name="number2" id="number2" placeholder="რიცხვი 2">
+            <p class="gamotvla" onclick="gamotvla()">გამოთვლა</p>
+        </form>
+        <p class="anwserbox">
+            პასუხი: <span id="answer"></span>
+        </p>
+    </main>
+    <footer></footer>
+    <script src="js/calc.js"></script>
+</body>
+</html>

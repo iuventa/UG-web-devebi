@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Template</title>
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.gif" alt="logo">
+    </header>
+    <main>
+        <p class="btn" onclick="gamochena()">Click me!</p>
+        <div class="box" id="box">Happy Wemen's day</div>
+    </main>
+    <footer>
+        <div class="writealetter flex" onclick="show()">
+            <img src="assets/img/logo.gif" alt="logo">
+            <p>მიწერე წერილი საყვარელ ადამიანს</p>
+            </div>
+  
+        <form id="form">
+            <div class="formhead flex">
+                <img src="assets/img/close.webp" alt="close" onclick="exit()">
+            </div>
+            <div class="formmain">
+                <input type="text" name="saxeli" id="saxeli" placeholder="გულისსწორის სახელი">
+                <input type="email" name="email" id="email" placeholder="გულისსწორის იმეილი">
+                <textarea name="shetyobineba" id="shetyobineba" placeholder="დაუტოვეთ სასიამოვნო შეტყობინება"></textarea>
+                <p class="send" onclick="exit()">აფრინე წერილი</p>
+            </div>
+        </form>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
