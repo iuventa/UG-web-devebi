@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    background-color: #f6f5f1;
+}
+h1{
+    width: 80px;
+    height: 50px;
+    background-image: url(../assets/img/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-indent: -9999999px;
+    margin: 50px auto;
+}
+h1 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+h2{
+    text-align: center;
+    color: #3d231e;
+    font-size: 18px;
+}
+.options, .container{
+    width: 800px;
+    margin: 50px auto;
+    /* border-bottom: 1px solid #3d231e; */
+}
+.options li{
+    padding: 16px;
+    text-align: center;
+    width: 33.33%;
+    cursor: pointer;
+    border-bottom: 1px solid #3d231e;
+}
+.options li:nth-child(2){
+    border-right: 1px solid #3d231e;
+    border-left: 1px solid #3d231e;
+}
+.options li:hover{
+    background-color: #c2bda3;
+}
+.item{
+    text-align: center;
+    display: none;
+}
+.bedimage{
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+
+}
+.bedimage img{
+    width: 100%;
+}
+.price{
+    background-color: #e6a503;
+    width: 150px;
+    padding: 26px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 50%;
+    margin: 0 auto;
+    color: #3d231e;
+}
+
+.attatchments li{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #c2bda3;
+    margin: 20px;
+}
+.attatchments li:hover{
+    border: 1px solid #3d231e;
+    cursor: pointer;
+}

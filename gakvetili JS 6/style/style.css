@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shuqnishani{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -900px;
+}
+.bulb{
+    width: 82px;
+    height: 82px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.red{
+    top:55px;
+    left: 1350px;
+}
+.yellow{
+    top:137px;
+    left: 1350px;
+}
+.green{
+    top:220px;
+    left: 1350px;
+}
+.shuq{
+    position: absolute;
+    top:100px;
+    left: 100px;
+    width: 400px;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 30px;
+}
+.shuq input, .shuq p{
+    width: 100%;
+    padding: 14px;
+}
+.shuq p{
+    background-color: #e6e6e6;
+    text-align: center;
+    margin-top: 20px;
+}
+.shuq p:hover{
+    background-color: #bebebe;
+    cursor: progress;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Calculator page styles
+
+S T A R T
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.calcbody{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/img/bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    width: 150px;
+    height: 150px;
+    background-image: url(../assets/img/calc.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-indent: -999999999px;
+    margin: 50px auto;
+    animation: logoAnimation 3s infinite;
+
+}
+h1 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+@keyframes logoAnimation {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(45deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(-45deg);}
+    100%{transform: rotate(0deg);}
+}
+.calc{
+    width: 800px;
+    background-image: linear-gradient(to bottom right, #e36cb0 50%, #7c96f7 50% );
+    margin: 50px auto;
+    border-radius: 30px;
+    padding: 50px;
+}
+.calc input{
+    padding: 16px;
+}
+.calc input[type="number"]{
+    width: 39%;
+}
+.calc input[type="text"]{
+    width: 20%;
+}
+.gamotvla{
+    background-color: #ebebeb;
+    text-align: center;
+    padding: 16px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.gamotvla:hover{
+    border-radius: 50%;
+    cursor: pointer;
+}
+.anwserbox{
+    width: 400px;
+    margin: 50px auto;
+    background-color: #7cf791;
+    padding: 16px 50px;
+    border-radius: 30px;
+    font-size: 30px;
+    color: #014100;
+}
+#answer{
+    margin-left: 60px;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #000000;
+}
