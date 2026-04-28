@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    background-color: rgb(165, 255, 165);
+    padding: 20px;
+}
+.row{
+    background-color: rgb(125, 125, 255);
+}
+.col-sm-12, .col-md-8, .col-lg-4{
+    background-color: yellow;
+    height: 30px;
+  border: 1px solid #000000;
+}

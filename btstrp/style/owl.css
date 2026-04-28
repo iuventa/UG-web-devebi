@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item{
+    height: 500px;
+    overflow: hidden;
+}
+.owl-theme .owl-nav{
+    position: absolute;
+    top:200px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.owl-theme .owl-nav [class*=owl-]{
+    font-size: 60px!important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: rgba(0,0,0,0);
+}
