@@ -1,54 +1,59 @@
 let calculate = () => {
     let gamosaxuleba = document.getElementById("gamosaxuleba").innerHTML;
 
-
+    let martiviGamosaxuleba = gamosaxuleba 
+        .replace("×", "*")
+        .replace("÷", "/")
+        .replace("−", "-");
    
+    let sum = eval(martiviGamosaxuleba);
+    
+    
+    // let number1, number2, operator, sum;
 
-    let number1, number2, operator, sum;
 
+    // if(gamosaxuleba.includes("+")){
 
-    if(gamosaxuleba.includes("+")){
+    //     operator = "+";
+    //     number1 = parseFloat(gamosaxuleba.slice(0, gamosaxuleba.indexOf("+")));
+    //     number2 = parseFloat(gamosaxuleba.slice(gamosaxuleba.indexOf("+")+1, gamosaxuleba.length));
+    //     sum = number1 + number2;
 
-        operator = "+";
-        number1 = parseFloat(gamosaxuleba.slice(0, gamosaxuleba.indexOf("+")));
-        number2 = parseFloat(gamosaxuleba.slice(gamosaxuleba.indexOf("+")+1, gamosaxuleba.length));
-        sum = number1 + number2;
+    // }
+    // else if(gamosaxuleba.includes("−")){
 
-    }
-    else if(gamosaxuleba.includes("−")){
+    //     operator = "−"; 
+    //     number1 = parseFloat(gamosaxuleba.slice(0, gamosaxuleba.indexOf("−")));
+    //     number2 = parseFloat(gamosaxuleba.slice(gamosaxuleba.indexOf("−")+1, gamosaxuleba.length));
+    //     sum = number1 - number2;
 
-        operator = "−"; 
-        number1 = parseFloat(gamosaxuleba.slice(0, gamosaxuleba.indexOf("−")));
-        number2 = parseFloat(gamosaxuleba.slice(gamosaxuleba.indexOf("−")+1, gamosaxuleba.length));
-        sum = number1 - number2;
+    // }
+    // else if(gamosaxuleba.includes("×")){
 
-    }
-    else if(gamosaxuleba.includes("×")){
+    //     operator = "×"; 
+    //     number1 = parseFloat(gamosaxuleba.slice(0, gamosaxuleba.indexOf("×")));
+    //     number2 = parseFloat(gamosaxuleba.slice(gamosaxuleba.indexOf("×")+1, gamosaxuleba.length));
+    //     sum = number1 * number2;
 
-        operator = "×"; 
-        number1 = parseFloat(gamosaxuleba.slice(0, gamosaxuleba.indexOf("×")));
-        number2 = parseFloat(gamosaxuleba.slice(gamosaxuleba.indexOf("×")+1, gamosaxuleba.length));
-        sum = number1 * number2;
+    // }
 
-    }
+    // else if(gamosaxuleba.includes("÷")){
 
-    else if(gamosaxuleba.includes("÷")){
+    //     operator = "÷"; 
+    //     number1 = parseFloat(gamosaxuleba.slice(0, gamosaxuleba.indexOf("÷")));
+    //     number2 = parseFloat(gamosaxuleba.slice(gamosaxuleba.indexOf("÷")+1, gamosaxuleba.length));
+    //     sum = number1 / number2;
 
-        operator = "÷"; 
-        number1 = parseFloat(gamosaxuleba.slice(0, gamosaxuleba.indexOf("÷")));
-        number2 = parseFloat(gamosaxuleba.slice(gamosaxuleba.indexOf("÷")+1, gamosaxuleba.length));
-        sum = number1 / number2;
+    // }
 
-    }
+    // else if(gamosaxuleba.includes("%")){
 
-    else if(gamosaxuleba.includes("%")){
+    //     operator = "%"; 
+    //     number1 = parseFloat(gamosaxuleba.slice(0, gamosaxuleba.indexOf("%")));
+    //     number2 = parseFloat(gamosaxuleba.slice(gamosaxuleba.indexOf("%")+1, gamosaxuleba.length));
+    //     sum = (number1 * number2) / 100;
 
-        operator = "%"; 
-        number1 = parseFloat(gamosaxuleba.slice(0, gamosaxuleba.indexOf("%")));
-        number2 = parseFloat(gamosaxuleba.slice(gamosaxuleba.indexOf("%")+1, gamosaxuleba.length));
-        sum = (number1 * number2) / 100;
-
-    }
+    // }
 
 
     document.getElementById("answer").innerHTML = sum;

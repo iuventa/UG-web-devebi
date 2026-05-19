@@ -1,0 +1,169 @@
+@use "variables" as v;
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url(../assets/fonts/Gilroy-ExtraBold.otf);
+}
+@font-face {
+    font-family: Gilroy-Light;
+    src: url(../assets/fonts/Gilroy-Light.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none!important;
+    box-sizing: border-box;
+    font-family: Gilroy-Light;
+}
+
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    background-color: v.$white;
+    padding: 24px;
+    display: grid;
+    grid-template-rows: 100px 480px 206px 100px;
+    // grid-template-columns: 448px 92px 330px 448px;
+    //                       5fr 1fr   3fr  5fr
+    grid-template-columns: 5fr 1fr 3fr 5fr;
+    gap: 25px;
+}
+header{
+    grid-area: 1 / 1 / 2 / 5;
+    @include flex;
+    background-color: v.$lightpink;
+    padding: 42px 24px;
+    border-radius: 20px;
+    h1{
+        a{
+            font-size: 25px;
+            text-transform: uppercase;
+            font-style: italic;
+            color: v.$black;
+            font-weight: 400;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+    ul{
+        @include flex;
+        width: 303px;
+        a{
+            color: v.$black;
+        }
+    }
+
+}
+.descripton{
+    grid-area: 2 / 1 / 3 / 3;
+    background-color: v.$lightpink;
+    color: v.$black;
+    border-radius: 20px;
+    background-image: url(../assets/img/flower.png);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-origin: content-box;
+    padding: 30px;
+    @include flex;
+    align-items: flex-end;
+    h2{
+       width: 475px; 
+       font-size: 56px;
+       font-family: Gilroy-ExtraBold;
+       span{
+            font-weight: 400;
+            font-style: italic;
+        }
+    }
+}
+.image{
+    grid-area: 2 / 3 / 3 / 4;
+    overflow: hidden;
+    border-radius: 20px;
+    img{
+        // width: 100%;
+        height: 100%;
+    }
+}
+.projects{
+    grid-area: 2 / 4 / 4 / 5;
+    background-color: v.$lightpink;
+    padding: 34px 24px;
+    border-radius: 20px;
+    img{
+        width: 100%;
+    }
+}
+.accordion-button::after{
+    background-image: none;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url(../assets/img/arrow.png);
+    transform: rotate(0deg);
+} 
+.accordion-button:not(.collapsed){
+    background-color: rgba(0, 0,0, 0);
+    box-shadow: none;
+}
+.accordion-item{
+    border: none;
+    border-bottom: 2px solid v.$pink;
+}
+.accordion{
+    --bs-accordion-bg: rgba(0, 0,0, 0);
+}
+
+.experience{
+    grid-area: 3 / 1 / 5 / 2;
+    background-color: v.$lightpink;
+    color: v.$black;
+    border-radius: 20px;
+    background-image: url(../assets/img/round.png);
+    background-repeat: no-repeat;
+    background-size: 38px;
+    padding: 32px 24px;
+    background-origin: content-box;
+    background-position: top left;
+    @include flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    p{
+        font-size: 20px;
+        width: 296px;
+    }
+}
+.contact{
+    grid-area: 3 / 2 / 5 / 4;
+    background-color: v.$pink;
+    padding: 30px 24px;
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 20px;
+    .contactheader{
+        @include flex;
+        width: 100%;
+        p{
+            width: 78px;
+            font-size: 15px;
+        }
+        img{
+            width: 38px;
+        }
+    }
+
+}
+footer{
+    @include flex;
+    background-color: v.$lightpink;
+    padding: 44px 56px;
+    border-radius: 20px;
+    a{
+        color: v.$black;
+    }
+}
