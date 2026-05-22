@@ -58,3 +58,6 @@ button{
     text-align: center;
     font-size: 30px;
 }
+section button{
+    width: 200px;
+} 
